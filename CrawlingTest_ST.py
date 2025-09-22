@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import re
 import io
@@ -23,7 +24,8 @@ if uploaded_file:
         st.info("Scraping in progress... Browser window will open.")
 
         # Selenium setup (no headless)
-        driver = webdriver.Chrome()
+        #driver = webdriver.Chrome()
+        driver = webdriver.Chrome(ChromeDriverManager().install())
 
         # Prepare lists
         product_ids = []
