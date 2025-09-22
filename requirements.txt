@@ -46,6 +46,7 @@ pydeck==0.9.1
 Pygments==2.19.2
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
 pytz==2025.2
 #pywin32==311
 pyzmq==27.1.0
@@ -70,5 +71,6 @@ tzdata==2025.2
 urllib3==2.5.0
 watchdog==6.0.0
 wcwidth==0.2.13
+webdriver-manager==4.0.2
 websocket-client==1.8.0
 wsproto==1.2.0
